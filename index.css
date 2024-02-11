@@ -1,0 +1,190 @@
+html
+{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 16px;
+    color: hsl(220, 13%, 13%);
+    margin: 0;
+}
+
+body
+{
+    margin: 0;
+}
+
+nav
+{
+    margin-top: -15px;
+    padding: 0 150px;
+    display: flex;
+    flex-direction: row;
+}
+
+.left-header,
+.right-header
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5%;
+}
+
+.left-header
+{
+    width: 70%;
+}
+
+.right-header
+{
+    width: 30%;
+    justify-content: end;
+}
+
+.image-avatar
+{
+    transform: scale(0.4);
+}
+
+main
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 100px 200px;
+}
+
+.left-side
+{
+    width: 70%;
+}
+
+.main-picture
+{
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 25px;
+}
+
+.small-picture-div
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.small-picture
+{
+    width: 20%;
+    border-radius: 10px;
+}
+
+
+
+.right-side
+{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: end;
+    width: 40%;
+}
+
+.sniker-company
+{
+    color: hsl(26, 100%, 55%);
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.shoe-name
+{
+    font-size: 3em;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 30   px;
+}
+
+.sale
+{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: -30px;
+}
+
+.new-price
+{
+    font-size: 1.7em;
+    font-weight: 700;
+}
+
+.discount
+{
+    color: hsl(26, 100%, 55%);
+    background-color: hsl(25, 100%, 94%);
+    padding: 1px 5px;
+    border-radius: 5px;
+}
+
+.old-price
+{
+    text-decoration: line-through;
+    margin-bottom: 50px;
+}
+
+
+
+
+.add-delete-quantity
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.current-quantity
+{
+    font-weight: 700;
+}
+
+button
+{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+
+@media (max-width: 1000px)
+{
+    main
+    {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .right-side,
+    .left-side
+    {
+        width: 80%;
+    }
+}
+
+@media (max-width: 700px)
+{
+    main
+    {
+        padding: 20px;
+    }
+
+    .right-side,
+    .left-side
+    {
+        width: 100%;
+    }
+}
